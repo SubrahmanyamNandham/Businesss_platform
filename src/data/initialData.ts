@@ -1,4 +1,11 @@
 import { Project, ServiceItem, IndustryItem, ClientProposal, ClientInquiry } from '../types';
+import schoolErpImage from '../assets/images/project_school_erp_1793783480375.jpg';
+import restaurantPosImage from '../assets/images/project_restaurant_pos_1793783480470.jpg';
+import fintechMvpImage from '../assets/images/project_fintech_mvp_1793783481189.jpg';
+import heroStudioImage from '../assets/images/hero_digital_studio_1793783480039.jpg';
+
+export const SCHOOL_ERP_IMAGE = schoolErpImage;
+export const HERO_STUDIO_IMAGE = heroStudioImage;
 
 export const INITIAL_PROJECTS: Project[] = [
   {
@@ -24,7 +31,7 @@ export const INITIAL_PROJECTS: Project[] = [
       { metric: '100% On-time', context: 'tuition fee reconciliation with zero manual ledger discrepancies' },
       { metric: '1,480 Students', context: 'actively managed across 62 faculty members with 99.98% platform uptime' }
     ],
-    image: '/src/assets/images/project_school_erp_1793783480375.jpg',
+    image: schoolErpImage,
     featured: true,
     year: '2026',
     duration: '10 Weeks'
@@ -52,7 +59,7 @@ export const INITIAL_PROJECTS: Project[] = [
       { metric: '0.4% Order Errors', context: 'reduced down from 8.2% across 4 restaurant locations' },
       { metric: '+$42,000 / Mo', context: 'in direct digital commission savings recaptured from aggregator apps' }
     ],
-    image: '/src/assets/images/project_restaurant_pos_1793783480470.jpg',
+    image: restaurantPosImage,
     featured: true,
     year: '2026',
     duration: '6 Weeks'
@@ -79,7 +86,7 @@ export const INITIAL_PROJECTS: Project[] = [
       { metric: '6 Weeks to Demo', context: 'shipped from kickoff to production staging 2 weeks ahead of target' },
       { metric: '<45ms Latency', context: 'real-time telemetry rendering across 500,000 tick events' }
     ],
-    image: '/src/assets/images/project_fintech_mvp_1793783481189.jpg',
+    image: fintechMvpImage,
     featured: true,
     year: '2026',
     duration: '8 Weeks'
@@ -106,7 +113,7 @@ export const INITIAL_PROJECTS: Project[] = [
       { metric: '$180,000/yr', context: 'saved in demurrage penalties and overtime administrative overhead' },
       { metric: '14,000 Shipments', context: 'processed monthly without requiring additional operations headcount' }
     ],
-    image: '/src/assets/images/hero_digital_studio_1793783480039.jpg',
+    image: heroStudioImage,
     featured: false,
     year: '2025',
     duration: '12 Weeks'

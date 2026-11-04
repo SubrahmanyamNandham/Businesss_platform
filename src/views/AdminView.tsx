@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAgency } from '../context/AgencyContext';
 import { ClientInquiry, ClientProposal, Project } from '../types';
 import { ProposalEditorModal } from '../components/ProposalEditorModal';
+import { SCHOOL_ERP_IMAGE } from '../data/initialData';
 import {
   Inbox,
   FileText,
@@ -61,7 +62,7 @@ export const AdminView: React.FC = () => {
     techStack: ['React', 'TypeScript', 'Node.js', 'PostgreSQL'],
     keyFeatures: ['Feature 1', 'Feature 2'],
     outcomes: [{ metric: '+100%', context: 'Operational efficiency increase' }],
-    image: '/src/assets/images/project_school_erp_1793783480375.jpg',
+    image: SCHOOL_ERP_IMAGE,
     featured: true,
     year: '2026',
     duration: '8 Weeks'
@@ -169,7 +170,7 @@ export const AdminView: React.FC = () => {
       techStack: newProjectData.techStack || ['React', 'TypeScript', 'Node.js'],
       keyFeatures: newProjectData.keyFeatures || ['Core workflow optimization'],
       outcomes: newProjectData.outcomes || [{ metric: '99.9%', context: 'Operational uptime' }],
-      image: newProjectData.image || '/src/assets/images/project_school_erp_1793783480375.jpg',
+      image: newProjectData.image || SCHOOL_ERP_IMAGE,
       featured: newProjectData.featured ?? true,
       year: newProjectData.year || '2026',
       duration: newProjectData.duration || '8 Weeks'

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { useAgency } from '../context/AgencyContext';
 import { ArrowUpRight, CheckCircle2, ChevronRight, Layers, Cpu, GraduationCap, UtensilsCrossed, FileCheck2 } from 'lucide-react';
+import { HERO_STUDIO_IMAGE } from '../data/initialData';
 
 export const HomeView: React.FC = () => {
   const { setCurrentView, projects, setSelectedProject, startProjectWithContext, setSelectedProposalId } = useAgency();
@@ -111,7 +112,7 @@ export const HomeView: React.FC = () => {
           >
             <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full min-h-[340px] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl">
               <img
-                src="/src/assets/images/hero_digital_studio_1793783480039.jpg"
+                src={HERO_STUDIO_IMAGE}
                 alt="Vanguard Digital Agency Studio Workspace"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

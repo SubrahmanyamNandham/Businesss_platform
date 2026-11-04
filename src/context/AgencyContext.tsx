@@ -1,6 +1,16 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Project, ClientProposal, ClientInquiry, ServiceItem, IndustryItem } from '../types';
-import { INITIAL_PROJECTS, INITIAL_PROPOSALS, INITIAL_INQUIRIES, SERVICES_CATALOG, INDUSTRIES_SERVED } from '../data/initialData';
+import {
+  INITIAL_PROJECTS,
+  INITIAL_PROPOSALS,
+  INITIAL_INQUIRIES,
+  SERVICES_CATALOG,
+  INDUSTRIES_SERVED,
+  SCHOOL_ERP_IMAGE,
+  HERO_STUDIO_IMAGE
+} from '../data/initialData';
+import restaurantPosImage from '../assets/images/project_restaurant_pos_1793783480470.jpg';
+import fintechMvpImage from '../assets/images/project_fintech_mvp_1793783481189.jpg';
 
 export type AppView = 'home' | 'work' | 'services' | 'industries' | 'process' | 'proposals' | 'contact' | 'admin';
 
@@ -49,6 +59,22 @@ const STORAGE_KEYS = {
   ADMIN: 'vanguard_is_admin_v1'
 };
 
+const normalizeProjectImage = (project: Project): Project => {
+  if (project.image?.includes('project_school_erp_1793783480375.jpg')) {
+    return { ...project, image: SCHOOL_ERP_IMAGE };
+  }
+  if (project.image?.includes('project_restaurant_pos_1793783480470.jpg')) {
+    return { ...project, image: restaurantPosImage };
+  }
+  if (project.image?.includes('project_fintech_mvp_1793783481189.jpg')) {
+    return { ...project, image: fintechMvpImage };
+  }
+  if (project.image?.includes('hero_digital_studio_1793783480039.jpg')) {
+    return { ...project, image: HERO_STUDIO_IMAGE };
+  }
+  return project;
+};
+
 export const AgencyProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [currentView, setCurrentView] = useState<AppView>('home');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -61,7 +87,9 @@ export const AgencyProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [projects, setProjects] = useState<Project[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEYS.PROJECTS);
-      return saved ? JSON.parse(saved) : INITIAL_PROJECTS;
+      return saved
+        ? (JSON.parse(saved) as Project[]).map(normalizeProjectImage)
+        : INITIAL_PROJECTS;
     } catch {
       return INITIAL_PROJECTS;
     }
