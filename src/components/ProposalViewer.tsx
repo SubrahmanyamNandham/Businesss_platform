@@ -205,7 +205,7 @@ export const ProposalViewer: React.FC<ProposalViewerProps> = ({
         <div className="border-b border-neutral-800 pb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
           <div className="space-y-1">
             <div className="text-xs uppercase tracking-widest text-neutral-400 font-mono">
-              VANGUARD SYSTEMS & DESIGN · EXECUTIVE CLIENT PROPOSAL
+              EVOLVEX AI · EXECUTIVE CLIENT PROPOSAL
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
               {proposal.projectTitle}
@@ -261,10 +261,10 @@ export const ProposalViewer: React.FC<ProposalViewerProps> = ({
           <div className="space-y-2 sm:border-l sm:border-neutral-800 sm:pl-6">
             <h3 className="font-semibold uppercase tracking-wider text-neutral-400 text-[11px]">Executing Partner</h3>
             <div className="space-y-1 text-neutral-300">
-              <div className="font-medium text-white text-sm">Vanguard Systems & Design LLC</div>
+              <div className="font-medium text-white text-sm">Evolvex AI</div>
               <div>Principal Engineering & Product Advisory</div>
-              <div className="text-neutral-400">inquiries@vanguard-studio.tech</div>
-              <div className="text-neutral-400">+1 (555) 019-2834 · San Francisco / London</div>
+              <div className="text-neutral-400">evolvexai@gmail.com</div>
+              <div className="text-neutral-400">+91 89192 90366</div>
             </div>
           </div>
         </div>
@@ -567,7 +567,7 @@ export const ProposalViewer: React.FC<ProposalViewerProps> = ({
         {/* Document Footer Signatures */}
         <div className="grid grid-cols-2 gap-8 pt-8 border-t border-neutral-800/80 text-xs">
           <div className="space-y-2">
-            <span className="text-[10px] uppercase font-mono text-neutral-400 block">For Vanguard Systems & Design</span>
+            <span className="text-[10px] uppercase font-mono text-neutral-400 block">Prepared by Evolvex AI</span>
             <div className="h-10 border-b border-neutral-700 flex items-end pb-1 font-serif italic text-neutral-200">
               Alexander Thorne, Principal Partner
             </div>

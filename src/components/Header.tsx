@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAgency, AppView } from '../context/AgencyContext';
 import { Menu, X, Lock, Unlock, ArrowUpRight } from 'lucide-react';
+import { Brand } from './Brand';
 
 export const Header: React.FC<{ onOpenAdminLogin: () => void }> = ({ onOpenAdminLogin }) => {
   const { currentView, setCurrentView, isAdmin, setIsAdmin } = useAgency();
@@ -28,9 +29,7 @@ export const Header: React.FC<{ onOpenAdminLogin: () => void }> = ({ onOpenAdmin
           onClick={() => handleNavClick('home')}
           className="text-left group cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 rounded-sm"
         >
-          <span className="text-xl font-bold tracking-tight text-white whitespace-nowrap shrink-0 group-hover:text-neutral-300 transition-colors">
-            VANGUARD <span className="font-light text-neutral-400">/ STUDIO</span>
-          </span>
+          <Brand compact />
         </button>
 
         {/* Zone 2: 4–5 clean single-line text navigation links */}
@@ -66,7 +65,7 @@ export const Header: React.FC<{ onOpenAdminLogin: () => void }> = ({ onOpenAdmin
                   ? 'bg-neutral-800 text-emerald-400 border-neutral-700'
                   : 'bg-neutral-900 text-neutral-300 border-neutral-800 hover:border-neutral-700'
               }`}
-              title="Studio Command Center"
+              title="Evolvex AI command center"
             >
               <Unlock className="w-3.5 h-3.5 text-emerald-400" />
               <span>Admin Mode</span>
@@ -75,7 +74,7 @@ export const Header: React.FC<{ onOpenAdminLogin: () => void }> = ({ onOpenAdmin
             <button
               onClick={onOpenAdminLogin}
               className="hidden lg:flex items-center gap-1 px-2.5 py-1 text-xs text-neutral-500 hover:text-neutral-300 transition-colors cursor-pointer"
-              title="Studio Portal Login"
+              title="Evolvex AI portal login"
             >
               <Lock className="w-3 h-3" />
               <span>Studio Portal</span>

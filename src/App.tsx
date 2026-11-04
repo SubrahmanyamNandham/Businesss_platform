@@ -24,7 +24,7 @@ const AppContent: React.FC = () => {
   const [adminModalOpen, setAdminModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans selection:bg-neutral-100 selection:text-neutral-900">
+    <div className="min-h-screen bg-neutral-950 text-neutral-100 flex flex-col font-sans selection:bg-neutral-800 selection:text-neutral-950">
       
       {/* 3-Zone Header */}
       <Header onOpenAdminLogin={() => setAdminModalOpen(true)} />

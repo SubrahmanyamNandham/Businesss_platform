@@ -178,7 +178,7 @@ export const ProcessView: React.FC = () => {
             Engineering Culture & Guarantees
           </h2>
           <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-            We are a lean, senior multidisciplinary team. When you engage Vanguard, you work directly with principal software architects and award-winning designers — never junior subcontractors.
+            We are a lean, senior multidisciplinary team. When you engage Evolvex AI, you work directly with principal software architects and experienced designers — never junior subcontractors.
           </p>
         </div>
 

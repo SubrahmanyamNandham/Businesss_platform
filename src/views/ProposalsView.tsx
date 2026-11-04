@@ -29,7 +29,7 @@ export const ProposalsView: React.FC = () => {
             Client Project Proposals
           </h1>
           <p className="text-sm sm:text-base text-neutral-300 leading-relaxed">
-            Every Vanguard engagement begins with complete clarity. Explore sample client proposals below to see our transparent milestone schedules, fixed pricing, architecture blueprints, and digital approval sign-off.
+            Every Evolvex AI engagement begins with complete clarity. Explore sample client proposals below to see transparent milestone schedules, fixed pricing, architecture blueprints, and digital approval sign-off.
           </p>
         </div>
 

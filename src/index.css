@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
   :root {
-    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
   }
   
@@ -12,6 +13,153 @@
     font-family: var(--font-sans);
     scroll-behavior: smooth;
   }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 82% 8%, rgba(139, 75, 232, 0.24), transparent 28rem),
+      radial-gradient(circle at 15% 72%, rgba(239, 77, 109, 0.12), transparent 30rem),
+      linear-gradient(145deg, #090812 0%, #100b1d 48%, #171124 100%);
+    color: #f7f4ff;
+  }
+
+  h1, h2 {
+    font-family: 'Instrument Serif', Georgia, serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Evolvex AI signature palette: obsidian, plum, violet, and tomato-orange. */
+[class*="bg-neutral-950"] {
+  background-color: rgba(12, 10, 20, 0.96) !important;
+}
+
+[class*="bg-neutral-900"] {
+  background-color: rgba(28, 21, 42, 0.92) !important;
+}
+
+[class*="bg-neutral-800"] {
+  background-color: #302641 !important;
+}
+
+[class*="bg-neutral-700"] {
+  background-color: #453659 !important;
+}
+
+[class*="bg-white"] {
+  background-image: linear-gradient(135deg, #ff7a3d 0%, #ef4d6d 52%, #8b4be8 100%) !important;
+  background-color: transparent !important;
+}
+
+[class*="hover:bg-white"]:hover {
+  background-image: linear-gradient(135deg, #ff9564 0%, #f25b78 52%, #a05bf3 100%) !important;
+}
+
+[class*="hover:bg-neutral-200"]:hover {
+  background-image: linear-gradient(135deg, #ff9564 0%, #f25b78 52%, #a05bf3 100%) !important;
+}
+
+[class*="text-neutral-100"],
+[class*="text-white"] {
+  color: #f8f5ff !important;
+}
+
+[class*="text-neutral-200"],
+[class*="text-neutral-300"] {
+  color: #c8c1d8 !important;
+}
+
+[class*="text-neutral-400"],
+[class*="text-neutral-500"] {
+  color: #aaa1bb !important;
+}
+
+[class*="text-neutral-950"] {
+  color: #fffdf8 !important;
+}
+
+[class*="border-neutral-900"],
+[class*="border-neutral-800"],
+[class*="border-neutral-700"] {
+  border-color: rgba(197, 174, 255, 0.14) !important;
+}
+
+[class*="border-neutral-600"] {
+  border-color: rgba(116, 108, 90, 0.28) !important;
+}
+
+[class*="text-emerald-400"],
+[class*="text-emerald-500"] {
+  color: #ff8258 !important;
+}
+
+[class*="bg-emerald-400"],
+[class*="bg-emerald-500"] {
+  background-image: linear-gradient(135deg, #ff7a3d, #ed4e7b) !important;
+  background-color: transparent !important;
+}
+
+[class*="border-emerald"] {
+  border-color: rgba(155, 128, 79, 0.38) !important;
+}
+
+button, a {
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease,
+    box-shadow 180ms ease, transform 180ms ease !important;
+}
+
+button:not(:disabled),
+a[href] {
+  cursor: pointer;
+}
+
+button:not(:disabled):active {
+  transform: translateY(1px) scale(0.985) !important;
+}
+
+button[class*="bg-white"]:hover,
+button[class*="bg-emerald"]:hover {
+  box-shadow: 0 12px 28px rgba(239, 77, 109, 0.28) !important;
+  transform: translateY(-2px) !important;
+}
+
+[class*="rounded-xl"],
+[class*="rounded-lg"] {
+  box-shadow: none;
+}
+
+article[class*="group"],
+[class*="bg-neutral-900"][class*="border"] {
+  box-shadow: 0 18px 50px rgba(6, 4, 12, 0.22);
+}
+
+article[class*="group"]:hover,
+[class*="bg-neutral-900"][class*="border"]:hover {
+  border-color: rgba(255, 122, 61, 0.38) !important;
+  box-shadow: 0 22px 58px rgba(139, 75, 232, 0.16);
+}
+
+img {
+  filter: saturate(0.82) contrast(0.96);
+}
+
+input, textarea, select {
+  color: #f8f5ff !important;
+  caret-color: #ff7a3d;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa1bb !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0a14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(202, 157, 255, 0.24);
 }
 
 @media print {

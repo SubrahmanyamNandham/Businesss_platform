@@ -113,13 +113,13 @@ export const HomeView: React.FC = () => {
             <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-full min-h-[340px] rounded-xl overflow-hidden border border-neutral-800 bg-neutral-900 shadow-2xl">
               <img
                 src={HERO_STUDIO_IMAGE}
-                alt="Vanguard Digital Agency Studio Workspace"
+                alt="Evolvex AI digital product studio workspace"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent flex items-end p-6">
                 <div className="text-xs text-neutral-300 font-mono">
-                  <span className="text-white font-medium">Vanguard Collaborative Hub</span>
+                  <span className="text-white font-medium">Evolvex AI Collaborative Studio</span>
                   <span className="mx-2">·</span>
                   <span>Creative Direction & Systems Architecture</span>
                 </div>
@@ -532,12 +532,12 @@ export const HomeView: React.FC = () => {
               <ArrowUpRight className="w-4 h-4" />
             </button>
             <a
-              href="https://wa.me/15550192834?text=Hello%20Vanguard%20Team%2C%20I%20would%20like%20to%20discuss%20a%20new%20project."
+              href="https://wa.me/918919290366?text=Hello%20Evolvex%20AI%2C%20I%20would%20like%20to%20discuss%20a%20new%20project."
               target="_blank"
               rel="noreferrer"
               className="px-6 py-3.5 bg-neutral-900 hover:bg-neutral-800 text-emerald-400 border border-neutral-800 text-sm font-medium rounded transition-colors"
             >
-              Direct WhatsApp Hotline: +1 (555) 019-2834
+              Direct WhatsApp Hotline: +91 89192 90366
             </a>
           </div>
         </div>

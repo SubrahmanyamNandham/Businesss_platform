@@ -59,14 +59,14 @@ export const ContactView: React.FC = () => {
 
   const generateWhatsAppMessageUrl = () => {
     const text = encodeURIComponent(
-      `Hello Vanguard Studio, I would like to inquire about a project:\n` +
+      `Hello Evolvex AI, I would like to inquire about a project:\n` +
       `• Name: ${fullName || 'Client'}\n` +
       `• Company: ${company || 'Organization'}\n` +
       `• Type: ${projectType}\n` +
       `• Budget: ${budgetRange}\n` +
       `• Timeline: ${expectedTimeline}`
     );
-    return `https://wa.me/15550192834?text=${text}`;
+    return `https://wa.me/918919290366?text=${text}`;
   };
 
   return (
@@ -100,7 +100,7 @@ export const ContactView: React.FC = () => {
           <div className="space-y-4 text-xs">
             {/* WhatsApp */}
             <a
-              href="https://wa.me/15550192834?text=Hello%20Vanguard%20Team%2C%20I%20would%20like%20to%20discuss%20a%20new%20project."
+              href="https://wa.me/918919290366?text=Hello%20Evolvex%20AI%2C%20I%20would%20like%20to%20discuss%20a%20new%20project."
               target="_blank"
               rel="noreferrer"
               className="p-4 bg-neutral-950 border border-neutral-800 hover:border-emerald-600 rounded-lg flex items-start gap-3 transition-colors group"
@@ -111,7 +111,7 @@ export const ContactView: React.FC = () => {
               <div>
                 <span className="text-[10px] uppercase font-mono text-neutral-400 block mb-0.5">Instant WhatsApp Hotline</span>
                 <span className="text-sm font-semibold text-white group-hover:text-emerald-300 transition-colors">
-                  +1 (555) 019-2834
+                  +91 89192 90366
                 </span>
                 <p className="text-[11px] text-neutral-400 mt-0.5">Average reply time under 20 minutes</p>
               </div>
@@ -119,7 +119,7 @@ export const ContactView: React.FC = () => {
 
             {/* Direct Email */}
             <a
-              href="mailto:inquiries@vanguard-studio.tech"
+              href="mailto:evolvexai@gmail.com"
               className="p-4 bg-neutral-950 border border-neutral-800 hover:border-neutral-700 rounded-lg flex items-start gap-3 transition-colors group"
             >
               <div className="p-2 bg-neutral-900 border border-neutral-800 rounded text-neutral-300 shrink-0">
@@ -128,7 +128,7 @@ export const ContactView: React.FC = () => {
               <div>
                 <span className="text-[10px] uppercase font-mono text-neutral-400 block mb-0.5">Executive Email</span>
                 <span className="text-sm font-semibold text-white group-hover:text-neutral-200 transition-colors">
-                  inquiries@vanguard-studio.tech
+                  evolvexai@gmail.com
                 </span>
                 <p className="text-[11px] text-neutral-400 mt-0.5">Detailed RFPs & technical documents</p>
               </div>
@@ -142,7 +142,7 @@ export const ContactView: React.FC = () => {
               <div>
                 <span className="text-[10px] uppercase font-mono text-neutral-400 block mb-0.5">Direct Office Line</span>
                 <span className="text-sm font-semibold text-white">
-                  +1 (555) 248-9100
+                  +91 89192 90366
                 </span>
                 <p className="text-[11px] text-neutral-400 mt-0.5">Mon–Fri 8:00 AM – 7:00 PM EST</p>
               </div>

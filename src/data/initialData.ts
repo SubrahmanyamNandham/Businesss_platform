@@ -347,7 +347,7 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
     challenge: 'Decades-old legacy systems slow down cross-departmental operations and pose ongoing security and maintenance risks.',
     agencySolution: 'We modernize legacy business applications into responsive cloud-native platforms with strict enterprise SSO and compliance.',
     keyDifferentiators: ['Enterprise Single Sign-On (SAML/OAuth)', 'Rigorous automated testing and CI/CD pipelines', 'Dedicated SLA and disaster recovery architecture'],
-    exampleProjects: ['Nexus Logistics Pipeline Orchestrator', 'Vanguard Enterprise Extranet'],
+    exampleProjects: ['Nexus Logistics Pipeline Orchestrator', 'Evolvex Enterprise Extranet'],
     iconName: 'Building2'
   },
   {
@@ -357,7 +357,7 @@ export const INDUSTRIES_SERVED: IndustryItem[] = [
     challenge: 'Firms handle confidential client documents through insecure email attachments and face protracted onboarding intake delays.',
     agencySolution: 'We build encrypted client portals with digital document signing, automated intake questionnaires, and milestone billings.',
     keyDifferentiators: ['Zero-knowledge client document encryption', 'Integrated e-signatures and invoice payments', 'Bespoke high-end editorial brand presentation'],
-    exampleProjects: ['Vanguard Legal Vault & Client Portal', 'Sterling Advisory Proposal Engine'],
+    exampleProjects: ['Evolvex Legal Vault & Client Portal', 'Sterling Advisory Proposal Engine'],
     iconName: 'Award'
   }
 ];
@@ -377,7 +377,7 @@ export const INITIAL_PROPOSALS: ClientProposal[] = [
     validUntil: '2026-11-30',
     budgetTotal: 18500,
     currency: 'USD',
-    executiveSummary: 'Vanguard Systems has been engaged by Oakwood Preparatory Academy to design, engineer, and deploy a bespoke, modern Campus Information System. This platform consolidates student admissions, attendance logging, term gradebooks, tuition payments, and parent notifications into a single secure web portal.',
+    executiveSummary: 'Evolvex AI has been engaged by Oakwood Preparatory Academy to design, engineer, and deploy a bespoke, modern Campus Information System. This platform consolidates student admissions, attendance logging, term gradebooks, tuition payments, and parent notifications into a single secure web portal.',
     businessRequirements: [
       'Eliminate 3 disconnected legacy software platforms into one unified database',
       'Provide instant mobile attendance logging for 62 classroom teachers',
